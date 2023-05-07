@@ -5,7 +5,7 @@ import 'package:firebase_gamers/user.dart';
 class AuthService{
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  MyUser? _userFromFirebaseUser(User user) {
+  MyUser? _userFromFirebaseUser(User? user) {
     return user != null ? MyUser(uid: user.uid) : null;
   }
 
